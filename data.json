@@ -1,0 +1,26 @@
+[
+  {
+    "model": "app.category",
+    "pk": 1,
+    "fields": {
+      "name": "Technology"
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 2,
+    "fields": {
+      "name": "Travel"
+    }
+  },
+  {
+    "model": "app.post",
+    "pk": 1,
+    "fields": {
+      "title": "Introduction to Django",
+      "content": "Django is a web framework...",
+      "category": 1,
+      "publication_date": "2023-08-28T12:00:00Z"
+    }
+  }
+]

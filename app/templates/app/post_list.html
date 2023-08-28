@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <h2><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h2>
+                    <p>{{ post.content|truncatewords:20 }}</p>
+                    <p>Category: {{ post.category.name }}</p>
+                    <p>Published on: {{ post.publication_date }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
